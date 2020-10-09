@@ -64,7 +64,7 @@ class RakutenApiItemInsert(models.Model):
     isIncludedPostage = models.BooleanField(default=False, verbose_name='송료')
     isIncludedCashOnDeliveryPostage = models.BooleanField(default=False, verbose_name='반품수수료')
     displayPrice = models.IntegerField(default=0, verbose_name='표시가격')
-    orderLimit = models.IntegerField(default=-1, verbose_name='주문접수수')
+    orderLimit = models.IntegerField(default=-1, verbose_name='주문접수수료')
     postage = models.IntegerField(default=0, verbose_name='개별배송비')
     postageSegment1 = models.IntegerField(default=0, verbose_name='배송구분1')
     postageSegment2 = models.IntegerField(default=0, verbose_name='배송구분2')
